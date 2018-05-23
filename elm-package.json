@@ -1,5 +1,5 @@
 {
-    "version": "0.1.0",
+    "version": "1.0.0",
     "summary": "View Bootstrap grid with rows.",
     "repository": "https://github.com/nedSaf/elm-bootstrap-grid.git",
     "license": "BSD3",
