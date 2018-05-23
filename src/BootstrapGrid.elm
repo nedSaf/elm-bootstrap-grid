@@ -1,6 +1,9 @@
 module BootstrapGrid exposing (renderBootstrapGrid)
 
 {-| Splits a list into sub lists containing a given number of children.
+
+@docs renderBootstrapGrid
+
 -}
 
 import Html exposing (Html, div)
@@ -32,7 +35,7 @@ renderRow columnClass row =
 
 {-| Renders rows to a given number of columns. Gives the ability to wrap a list
 of Html msg with columns and rows:
-renderBootstrapGrid 2 List (div [], div [])
+renderBootstrapGrid 3 [div [], div [], div []][div [][], div [][], div [][]]
 This will give classes for mobile and tablet, mobile will allways have one
 element per row and tablet will have half (or close to it with odd numbers) the
 number of elements given for desktop.

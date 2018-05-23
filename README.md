@@ -3,7 +3,7 @@ A rendered grid with rows in Elm
 
 ## Example usage
 ```elm
-renderBootstrapGrid 3 List (div [], div [], div [])
+renderBootstrapGrid 3 [div [][], div [][], div [][]]
 ```
 
 This function will return the following:
