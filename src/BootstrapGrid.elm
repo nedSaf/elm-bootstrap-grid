@@ -53,4 +53,4 @@ renderBootstrapGrid columnsInOneRow colHtmlMsgList =
                 ++ (toString <| 12 // (columnsInOneRow - (columnsInOneRow // 2)))
                 ++ " col-xs-12"
     in
-    div [] (map (renderRow columnClass) <| listOfRows)
+    div [ class "container" ] (map (renderRow columnClass) <| listOfRows)
