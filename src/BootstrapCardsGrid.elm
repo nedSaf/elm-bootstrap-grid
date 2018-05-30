@@ -1,8 +1,8 @@
-module BootstrapGrid exposing (renderBootstrapGrid)
+module BootstrapCardsGrid exposing (renderBootstrapCardsGrid)
 
 {-| Splits a list into sub lists containing a given number of children.
 
-@docs renderBootstrapGrid
+@docs renderBootstrapCardsGrid
 
 -}
 
@@ -34,14 +34,13 @@ renderRow columnClass row =
 
 
 {-| Renders rows to a given number of columns. Gives the ability to wrap a list
-of Html msg with columns and rows:
-renderBootstrapGrid 3 [div [], div [], div []][div [][], div [][], div [][]]
-This will give classes for mobile and tablet, mobile will allways have one
+of Html msg with columns and rows.
+This will give classes for mobile and tablet, mobile will always have one
 element per row and tablet will have half (or close to it with odd numbers) the
 number of elements given for desktop.
 -}
-renderBootstrapGrid : Int -> List (Html msg) -> Html msg
-renderBootstrapGrid columnsInOneRow colHtmlMsgList =
+renderBootstrapCardsGrid : Int -> List (Html msg) -> Html msg
+renderBootstrapCardsGrid columnsInOneRow colHtmlMsgList =
     let
         listOfRows =
             split columnsInOneRow colHtmlMsgList
