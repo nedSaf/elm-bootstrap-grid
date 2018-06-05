@@ -11,6 +11,7 @@ number of elements given for desktop.
 renderBootstrapCardsGrid : Int -> List (Html msg) -> Html msg
 ```
 The `Int`: Is the number of desired columns in each row.
+
 The `List (Html msg)`: The list of cards that you want to add to the grid.
 
 
